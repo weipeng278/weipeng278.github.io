@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --web-view-ids: Web_1920___1;
+}
+#Web_1920___1 * {
+  margin: 0;
+  padding: 0;
+}
+#Web_1920___1 {
+  position: absolute;
+  box-sizing: border-box;
+  background: #E5E5E5;
+  width: 1920px;
+  height: 1080px;
+  background-color: rgba(247,247,247,1);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  --web-view-name: Web 1920 – 1;
+  --web-view-id: Web_1920___1;
+  --web-enable-deep-linking: true;
+}
+#Rectangle_1 {
+  fill: rgba(255,255,255,1);
+}
+.Rectangle_1 {
+  position: absolute;
+  overflow: visible;
+  width: 1920px;
+  height: 149px;
+  left: 0px;
+  top: 0px;
+}
+#logo {
+  fill: url(#logo_A0_Rectangle_3_pattern);
+}
+.logo {
+  position: absolute;
+  overflow: visible;
+  width: 300px;
+  height: 151px;
+  left: 0px;
+  top: 0px;
+}
+#Precision_Medicine__Participat {
+  position: absolute;
+  left: 194px;
+  top: 274px;
+  overflow: visible;
+  width: 886px;
+  white-space: nowrap;
+  line-height: 104px;
+  margin-top: -7px;
+  text-align: left;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  color: rgba(255,156,52,1);
+}
+#Precision_Medicine_is_differen {
+  position: absolute;
+  left: 1129px;
+  top: 274px;
+  overflow: visible;
+  width: 594px;
+  white-space: nowrap;
+  line-height: 36px;
+  margin-top: -4px;
+  text-align: left;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgba(37,37,37,1);
+}
+#Group_1 {
+  position: absolute;
+  width: 612px;
+  height: 144px;
+  left: 194px;
+  top: 732px;
+  overflow: visible;
+}
+#Rectangle_2 {
+  fill: rgba(25,22,68,1);
+}
+.Rectangle_2 {
+  position: absolute;
+  overflow: visible;
+  width: 612px;
+  height: 144px;
+  left: 0px;
+  top: 0px;
+}
+#LET_S_FIND_OUT_ {
+  position: absolute;
+  left: 108px;
+  top: 55px;
+  overflow: visible;
+  width: 397px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  color: rgba(255,255,255,1);
+}

@@ -1,0 +1,374 @@
+/* Fonts Import */
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("fonts/GothamBold.otf");
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("fonts/GothamBook.otf");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("fonts/GothamMedium.otf");
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  p#first-p {
+    padding-left: 160px;
+    padding-top: 0;
+    padding-right: 160px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  h1#first-title {
+    margin-right: 60px;
+  }
+
+  div.index-p {
+    margin-top: 3rem;
+  }
+
+  div.modal-dialog {
+    max-width: 500px;
+  }
+
+  button.Q5-2 {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  a.btn {
+    margin-top: 0;
+    margin-left: 200px;
+    width: 30%;
+  }
+
+  h1#first-title {
+    padding-left: 200px;
+    margin-top: 14rem;
+  }
+
+  p#first-p {
+    margin-top: 15.5rem;
+    margin-right: 160px;
+  }
+}
+
+/* Overall */
+body {
+  font-size: 2em;
+  background: #efefef;
+  height: 100%;
+  line-height: normal;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.col-lg-6 {
+  padding: 0;
+}
+
+/* Logo Bar */
+#logo {
+  height: 60px;
+}
+
+*, ::after, ::before {
+  box-sizing: content-box;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: transparent;
+  height: 70px;
+  width: 100%;
+}
+
+.navbar-brand{
+  padding: 5px 15px;
+}
+
+.navbar-brand>img{
+  height: 100%;
+  width: auto;
+}
+
+/* Title */
+#first-title {
+  margin-top: 12rem;
+  padding: 1rem 2rem 1rem 160px;
+  font-size: 1.8em;
+  font-family: "Gotham-Bold";
+  color: #FF9C34;
+}
+
+/* First Button */
+.btn {
+  background: #191644;
+  color: white;
+  padding: 1rem 1.5rem 0.8rem 1.5rem;
+  margin: 1rem 1rem 1rem 160px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: 30%;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Gotham-Medium";
+  font-size: 0.6em;
+  display: block;
+  /* margin: 2rem auto; */
+}
+
+.btn:hover {
+  background: #191644;
+  color: white;
+}
+
+/* First Paragraph */
+.index-p {
+  /* margin-top: 10rem; */
+  font-family: "Gotham-Book";
+  font-size: 0.6em;
+}
+
+p#first-p {
+  font-family: "Gotham-Book";
+  /* font-size: 0.6em; */
+  /* padding-top: 0; */
+}
+
+/* Progress Bar */
+.progress-bar {
+   font-family: "Gotham-Medium";
+   font-size: 1.5em;
+   position: absolute;
+   bottom: 0;
+   background: linear-gradient(273deg,#75c6a2,#fdd883);
+   height: 22px;
+   padding-top: 8px;
+}
+
+.progress {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width:100%;
+  height: 30px;
+}
+
+/* Question Label */
+.question-label {
+  text-align: center;
+  margin: 15rem auto 2rem;
+  font-family: "Gotham-Medium";
+  font-size: 0.9em;
+  max-width: 860px;
+}
+
+/* Checkbox */
+.checkbox-group {
+  text-align: left;
+  margin-left: 30%;
+  font-family: "Gotham-Book";
+  font-size: 0.7em;
+}
+
+@media (max-width: 1200px) {
+  div.checkbox-group {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 720px) {
+  div.checkbox-group {
+    margin-left: 10%;
+  }
+}
+
+.answer-label {
+  padding-top: 0;
+  padding-left: 1.5rem;
+}
+
+input.checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #191644;
+  transition: 0.2s all linear;
+
+  background: white;
+
+  position: relative;
+  top: 2px;
+
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+
+input.checkbox-input:checked {
+  border: 8px solid #191644;
+}
+
+.submit-btn {
+  margin: 4rem auto;
+  width: 140px;
+  font-family: "Gotham-Medium";
+  color: white;
+}
+
+/* Text */
+.text {
+  margin: 15rem auto 2rem;
+  font-family: "Gotham-Book";
+  width: 60%;
+  font-size: 0.8em;
+  z-index: 2;
+  position: relative;
+}
+
+/* Popup Window */
+.Q5-2, .Q7 {
+  border: 0;
+  background: #f8f8f8;
+  outline: 0;
+  color: black;
+  font-family: "Gotham-Book";
+  font-size: 1em;
+  text-align: left;
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 1em;
+}
+
+.modal-body {
+  padding: 3rem;
+}
+
+.modal-dialog {
+  max-width: 800px;
+}
+
+#visit-btn {
+  width: 350px;
+}
+
+#home-btn {
+  width: 250px;
+  margin: 2rem auto;
+}
+
+.last-text {
+  margin-top: 6rem;
+}
+
+#last-btn {
+  margin: 2rem auto;
+  width: 350px;
+}
+
+
+
+
+
+
+
+/* QNA Page */
+.bar-bottom {
+  height: 96px;
+  background: #6db1ec;
+}
+
+.qna-container {
+  margin: 96px 10% 0;
+  height: 100%;
+  background: white;
+}
+
+.qna-title {
+  padding: 3rem 0 0 3rem;
+  font-family: "Gotham-Bold";
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+  margin-left: 4%;
+}
+
+.qna-h2 {
+  font-size: 1.6em;
+  color: #191644;
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+}
+
+.qna-hr {
+  width: 8rem;
+  margin-top: 0;
+  color: #6db1ec;
+  border: none;
+  border-top: 6px solid #6db1ec;
+  overflow: visible;
+  text-align: left;
+  margin-left: 0.15rem;
+  border-radius: 5px;
+}
+
+.qna-content {
+  padding-top: 3rem;
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.qna-question {
+  font-family: "Gotham-Medium";
+  padding-right: 2rem;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.qna-answer {
+  list-style-type: none;
+  margin: 0px;
+  font-family: "Gotham-Book";
+  font-size: 0.8em;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem;
+  line-height: 1.5;
+}
+
+/* Intro */
+.qna-intro {
+  margin: 0 auto 0;
+  width: 80%;
+}
+
+h4.qna-introtext {
+  list-style-type: none;
+  margin: 0px;
+  font-family: "Gotham-Book";
+  font-size: 0.8em;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>CHhiRP</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 70px;
+            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="img/logo.png" id="logo" class="logo">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row intro-container" id="intro">
+            <div class="col-lg-10 col-lg-offset-1">
+                <img src="img/home-doc.png" alt="Clinical trial Decisions" class="decisionaid">
+                <h1>Clinical Trial Participation<br>Decision Aid</h1>
+                <p>Cancer is overwhelming, but learning whether clinical trials are right for you shouldn't be difficult. The CChiRP Decision Aid is <span class="highlight">a tool to that will give you personalized information to help you see if clinical trials are right for you</span>. </p>
+                <br>
+                <p>Are you ready to find out if joining a study is right for you?</p>
+                <br>
+                <input class="btn btn-default" type="button" onClick="start()" value="Let's find out!">
+            </div>
+        </div>
+
+        <div class="row question-counter" id="counter">
+            <div class="col-lg-12">
+                <input class="btn btn-default counter-btn" id="counter1" type="button" onClick="" value="1">
+                <input class="btn btn-default counter-btn" id="counter2" type="button" onClick="" value="2">
+                <input class="btn btn-default counter-btn" id="counter3" type="button" onClick="" value="3">
+                <input class="btn btn-default counter-btn" id="counter4" type="button" onClick="" value="4">
+                <input class="btn btn-default counter-btn" id="counter5" type="button" onClick="" value="5">
+                <input class="btn btn-default counter-btn" id="counter6" type="button" onClick="" value="6">
+                <input class="btn btn-default counter-btn" id="counter7" type="button" onClick="" value="7">
+                <input class="btn btn-default counter-btn" id="counter8" type="button" onClick="" value="8">
+                <input class="btn btn-default counter-btn" id="counter9" type="button" onClick="" value="9">
+                <input class="btn btn-default counter-btn" id="counter10" type="button" onClick="" value="10">
+            </div>
+        </div>
+
+
+
+        <div class="row questionaire-container">
+
+            <div class="col-lg-12">
+                <div class="question_wrapper" id="question1">
+                    <p class="question">Tell us your gender</p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="pers" name="question1" value="Female" id="pers-1">
+                        <label for="pers-1"><span class="radio">Female</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="pers" name="question1" value="Male" id="pers-2">
+                        <label for="pers-2"><span class="radio">Male</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="pers" name="question1" value="Non-binary|third gender" id="pers-3">
+                        <label for="pers-3"><span class="radio">Non-binary/third gender</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="pers" name="question1" value="Other/Prefer not to say" id="pers-4">
+                        <label for="pers-4"><span class="radio">Other/Prefer not to say</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next " id="next1" type="button" onClick="" value="Continue">
+                </div>
+                <div class="question_wrapper" id="question2">
+                    <p class="question">How old are you?</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="radio_wrapper">
+                                <input type="radio" data-selection="pers" value="under 20" name="question2" id="pers-6">
+                                <label for="pers-6"><span class="radio">Under 20</span></label>
+                            </div>
+                            <div class="radio_wrapper">
+                                <input type="radio" data-selection="pers" value="20-30" name="question2" id="pers-7">
+                                <label for="pers-7"><span class="radio">21-30</span></label>
+                            </div>
+                            <div class="radio_wrapper">
+                                <input type="radio" data-selection="pers" value="31-40" name="question2" id="pers-8">
+                                <label for="pers-8"><span class="radio">31-40</span></label>
+                            </div>
+                            <div class="radio_wrapper">
+                                <input type="radio" data-selection="pers" value="41-50" name="question2" id="pers-9">
+                                <label for="pers-9"><span class="radio">41-50</span></label>
+                            </div>
+                            <div class="radio_wrapper">
+                                <input type="radio" data-selection="pers" value="51-60" name="question2" id="pers-10">
+                                <label for="pers-10"><span class="radio">51-60</span></label>
+                            </div>
+
+                            <div class="radio_wrapper">
+                                <input type="radio" data-selection="pers" value="61+" name="question2" id="pers-11">
+                                <label for="pers-11"><span class="radio">61+</span></label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <input class="btn btn-default btn-next " id="next2" type="button" onClick="" value="Continue">
+
+
+                </div>
+                <div class="question_wrapper" id="question3">
+                    <p class="question">Would you describe yourself as</p>
+                    <div class="radio_wrapper">
+                        <input type="checkbox" data-selection="ethnic" value="White" name="question3" id="pers-101">
+                        <label for="pers-101"><span class="radio">White</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="checkbox" data-selection="ethnic" value="Hispanic or Latino" name="question3" id="pers-111">
+                        <label for="pers-111"><span class="radio">Hispanic or Latino</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="checkbox" data-selection="ethnic" value="Black or African American" name="question3" id="pers-121">
+                        <label for="pers-121"><span class="radio">Black or African American</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="checkbox" data-selection="ethnic" value="Native American or American Indian" name="question3" id="pers-131">
+                        <label for="pers-131"><span class="radio">Native American or American Indian</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="checkbox" data-selection="ethnic" value="Asian or Pacific Islander" name="question3" id="pers-142">
+                        <label for="pers-142"><span class="radio">Asian or Pacific Islander</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="checkbox" data-selection="ethnic" value="Other" name="question3" id="pers-151">
+                        <label for="pers-151"><span class="radio">Other</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next " id="next3" type="button" onClick="" value="Continue">
+
+                </div>
+                <div class="question_wrapper" id="question4">
+                    <p class="question">Do you have health insurance (including Medicare or Medicaid)?</p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="yes" name="question4" value="2" id="radio-1">
+                        <label for="radio-1"><span class="radio">Yes, I have insurance</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" data-issue="having insurance" name="question4" value="1" id="radio-3">
+                        <label for="radio-3"><span class="radio">Unsure</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" data-issue="having insurance" name="question4" value="0" id="radio-2">
+                        <label for="radio-2"><span class="radio">No</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next " id="next4" type="button" onClick="" value="Continue">
+                </div>
+
+                <div class="response_wrapper" id="response4Yes">
+                    <img src="img/insurance.png" alt="have health insurance" class="question-icon">
+                    <p>You told us that you think you have private insurance coverage or that you are covered by Medicare or Medicaid. <span class="highlight">This can make participating in a clinical trial or research study easier</span>.
+</p><p>
+Insurance, including Medicare and Medicaid, usually cover <em>most expenses</em> of medical treatment. Although the cost of new medicines or forms of treatment might not be covered, you can ask us whether the sponsor of the study (like the government or drug company) will pay these expenses.
+</p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response4No">
+                    <img src="img/pills.png" alt="no health insurance" class="question-icon">
+                  <p>  You told us that you are either unsure that you are covered by insurance or that you do not have insurance.</p>
+<p>
+  At the end of this survey, we will give you information about our Clinical Trial Navigator. They can check to see whether you are actually covered by insurance, Medicare, or Medicaid. <span class="highlight">If you do not have insurance, we can look for a study that you can join that will not have any costs to you</span>
+</p>
+  <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+
+                <div class="question_wrapper" id="question5">
+                    <p class="question">If you were to join a clinical trial...</p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" name="question5" value="0" id="radio-4" data-issue="wanting a specific type of treatment">
+                        <label for="radio-4"><span class="radio">You would prefer to get the usual treatment for your type of cancer</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="unsure" name="question5" value="1" id="radio-5">
+                        <label for="radio-5"><span class="radio">You would hope to get the latest new treatment for your type of cancer</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="yes" name="question5" value="2" id="radio-6">
+                        <label for="radio-6"><span class="radio">You would not have a preference over which type of treatment you receive, as long as there is evidence that it would work.</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next" id="next5" type="button" onClick="" value="Continue">
+                </div>
+
+
+                <div class="response_wrapper" id="response5No">
+                    <img src="img/hands.png" alt="Treatment" class="question-icon">
+                    <p>
+Many people only want a treatment that has already been tested while other people really want only a new type of treatment. And that’s okay. However, <span class="highlight">being certain that only one treatment is right for you might mean that a clinical trial is not right for you</span> since treatments given in a clinical trial treatment are often randomized. We will give you more information about randomization and how patients are protected at the end of this quiz.                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response5Yes">
+                    <img src="img/hands.png" alt="Treatment" class="question-icon">
+                    <p>
+In some clinical trials, patients are put into groups. Each group receives a different treatment. The process of assigning patients to these groups by chance is called randomization. For example, in a simple trial design, one group of people gets the new treatment while the other group gets standard therapy. <span class="highlight">People who are okay with getting the new treatment or “standard of care” tend to be more likely to join a clinical trial.</span>
+</p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response5Unsure">
+                    <img src="img/hands.png" alt="Treatment" class="question-icon">
+                    <p>
+In some clinical trials, patients are put into groups. Each group receives a different treatment. The process of assigning patients to these groups by chance is called randomization. For example, in a simple trial design, one group of people gets the new treatment while the other group gets standard therapy. <span class="highlight">People who are okay with getting the new treatment or “standard of care” tend to be more likely to join a clinical trial.</span>
+</p>                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+
+                <div class="question_wrapper" id="question6">
+                    <p class="question">
+                      Would it be okay if a computer (instead of your doctor) chose whether you would get the new treatment or the standard treatment?
+                    </p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="yes" name="question6" value="2" id="radio-7">
+                        <label for="radio-7"><span class="radio">Not a problem</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="unsure" name="question6" value="1" id="radio-8">
+                        <label for="radio-8"><span class="radio">Not sure</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" name="question6" value="0" id="radio-9" data-issue="wanting your doctor to choose your treatment rather than a computer">
+                        <label for="radio-9"><span class="radio">I want my doctor to choose the treatment I receive</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next" id="next6" type="button" onClick="" value="Continue">
+                </div>
+
+                <div class="response_wrapper" id="response6Yes">
+                    <img src="img/docs.png" alt="Doctors" class="question-icon">
+                    <p>
+In a clinical trial that includes randomization, you and your doctor do not choose which treatment you will get. Instead, a computer assigns you to a group. Randomization helps us learn a lot about how well each treatment works. <span class="highlight">People who are comfortable with randomization tend to be more likely to join a clinical trial.</span>
+                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response6No">
+                    <img src="img/docs.png" alt="Doctors" class="question-icon">
+
+                    <p>
+                      In a clinical trial that includes randomization, you and your doctor do not choose which treatment you will get. Instead, a computer assigns you to a group. Randomization helps us learn a lot about how well each treatment works. <span class="highlight">Your doctor or clinical trial navigator can explain each type of treatment in a way that you can understand.</span>
+</p>
+If you are uncomfortable with randomization, you can talk to our clinical trial navigator about <span class="highlight">joining a study that doesn’t involve randomization or taking any medicine</span>. We will give you more information about randomization and how patients are protected at the end of this questionnaire.
+
+
+</p>
+  <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response6Unsure">
+                    <img src="img/docs.png" alt="Doctors" class="question-icon">
+                    <p>
+                      In a clinical trial that includes randomization, you and your doctor do not choose which treatment you will get. Instead, a computer assigns you to a group. Randomization helps us learn a lot about how well each treatment works. <span class="highlight">Your doctor or clinical trial navigator can explain each type of treatment in a way that you can understand.</span>
+</p><p>
+                      If you are still uncomfortable with randomization, you can talk to our clinical trial navigator about <span class="highlight">joining a study that doesn’t involve randomization or taking any medicine</span>. We will give you more information about randomization and how patients are protected at the end of this questionnaire.
+</p>
+  <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="question_wrapper" id="question7">
+                    <p class="question">Would your family be upset if you joined a clinical trial or research study?</p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" name="question7" value="0" id="radio-10" data-issue="being worried that joining a research study would upset your family">
+                        <label for="radio-10"><span class="radio">Yes, I worry that it would upset my family</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="unsure" name="question7" value="1" id="radio-11">
+                        <label for="radio-11"><span class="radio">Not sure</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="yes" name="question7" value="2" id="radio-12">
+                        <label for="radio-12"><span class="radio">No, I am not worried that it would upset my family</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next" id="next7" type="button" onClick="" value="Continue">
+                </div>
+
+                <div class="response_wrapper" id="response7No">
+                    <img src="img/family.png" alt="Family" class="question-icon">
+                    <p>
+                        Choosing to be in a study is an important decision and you should talk about it with your doctor and family members or friends.  <span class="highlight">Family members who do not know a lot about clinical trials can learn more about why you are interested in joining a study</span>. Your doctor and the members of the study team can also answer any questions your family members have. When everyone in your family is comfortable with your decision, it can make being in a study a little easier. You will receive more information about how to talk to your family and friends in your personalized report.
+                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response7Yes">
+                    <img src="img/family.png" alt="Family" class="question-icon">
+                    <p>
+                        Choosing to be in a study is an important decision and you should talk about it with your doctor and family members or friends. People who respond to this question the way you did <span class="highlight">tend to be more likely to join a clinical trial or research study</span>. If anyone in your family has any questions about clinical trials your doctor (or someone on the study team) can help.  You will receive helpful information about how to talk to your family and friends in your personalized report.</p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response7Unsure">
+                    <img src="img/family.png" alt="Family" class="question-icon">
+                    <p>
+                      Choosing to be in a study is an important decision and you should talk about it with your doctor and family members or friends.  <span class="highlight">Family members who do not know a lot about clinical trials can learn more about why you are interested in joining a study</span>. Your doctor and the members of the study team can also answer any questions your family members have. When everyone in your family is comfortable with your decision, it can make being in a study a little easier. You will receive more information about how to talk to your family and friends in your personalized report.  </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+
+                <div class="question_wrapper" id="question8">
+                    <p class="question">Do you generally trust the doctors and researchers who do cancer research?</p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="yes" name="question8" value="2" id="radio-13">
+                        <label for="radio-13"><span class="radio">I trust cancer doctors and researchers.</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="unsure" name="question8" value="1" id="radio-14">
+                        <label for="radio-14"><span class="radio">Not sure</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" name="question8" value="0" id="radio-15" data-issue="not trusting doctors or hospitals">
+                        <label for="radio-15"><span class="radio">I don’t trust cancer doctors and researchers</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next" id="next8" type="button" onClick="" value="Continue">
+                </div>
+
+                <div class="response_wrapper" id="response8Yes">
+                    <img src="img/trust.png" alt="trust" class="question-icon">
+                    <p>
+Whether or not you decide to join a trial may be affected by how you feel about cancer doctors or researchers. <span class="highlight">People who generally trust doctors and researchers who conduct cancer research are more likely to participate in clinical trials</span>.
+                    </p>
+                    <p>
+Giving cancer patients the best, most ethical care is important to doctors and researchers. We will tell you more about how you are protected when you participate in research in your personalized report.                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response8No">
+                    <img src="img/notrust.png" alt="trust" class="question-icon">
+                    <p>
+                        Whether or not you decide to join a trial may be affected by how you feel about cancer doctors or researchers. People who have trouble trusting doctors and hospitals that do research are less likely to participate in clinical trials. And that’s okay. However, <span class="highlight">there are many ways that patients are protected when they participate in research studies</span>.
+
+                    </p>
+                    <p>Giving cancer patients the best, most ethical care is important to doctors and researchers. We will tell you more about how you are protected when you participate in research in your personalized report.
+                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response8Unsure">
+                    <img src="img/notrust.png" alt="trust" class="question-icon">
+                    <p>
+                      Whether or not you decide to join a trial may be affected by how you feel about cancer doctors or researchers. People who have trouble trusting doctors and hospitals that do research are less likely to participate in clinical trials. And that’s okay. However, <span class="highlight">there are many ways that patients are protected when they participate in research studies</span>.
+                    </p>
+                    <p>Giving cancer patients the best, most ethical care is important to doctors and researchers. We will tell you more about how you are protected when you participate in research in your personalized report.
+                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="question_wrapper" id="question9">
+                    <p class="question">Is it important to you to help others who might be affected with your type of cancer in the future?</p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="yes" name="question9" value="2" id="radio-16">
+                        <label for="radio-16"><span class="radio">It is important for me to help others by participating in research</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="unsure" name="question9" value="1" id="radio-17">
+                        <label for="radio-17"><span class="radio">Not sure</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" name="question9" value="0" id="radio-18" data-issue="prioritizing your own health issues over helping health">
+                        <label for="radio-18"><span class="radio">Helping others by joining a study is not a priority for me. </span></label>
+                    </div>
+                    <input class="btn btn-default btn-next" id="next9" type="button" onClick="" value="Continue">
+                </div>
+
+                <div class="response_wrapper" id="response9Yes">
+                    <img class="question-icon" alt="Empathy" src="img/community.png">
+                    <p>
+People join clinical trials for many reasons. Healthy volunteers say they join studies to help others. Patients who have an illness may want to join studies because they want a chance to receive the newest treatment. Patient may also want to get extra care from the clinical trial staff.  <span class="highlight">People who answer the way you did are more likely to participate in clinical trials</span>.                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response9No">
+                    <img class="question-icon" alt="Empathy" src="img/community.png">
+                    <p>
+                        People join clinical trials for many reasons. While making a difference to society might not be your top priority, a chance to receive the newest treatment or to get extra care from clinical trial staff might also influence your decision. <span class="highlight">Your choice should be based on your personal values as well as the facts about clinical trials</span>. You can learn a lot by looking at your personalized report at the end of this quiz. You can also talk to our Clinical Trial Navigator or your doctor.
+                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+                <div class="response_wrapper" id="response9Unsure">
+                    <img class="question-icon" alt="Empathy" src="img/community.png">
+                    <p>
+                        People join clinical trials for many reasons. While making a difference to society might not be your top priority, a chance to receive the newest treatment or to get extra care from clinical trial staff might also influence your decision. <span class="highlight">Your choice should be based on your personal values as well as the facts about clinical trials</span>. You can learn a lot by looking at your personalized report at the end of this quiz. You can also talk to our Clinical Trial Navigator or your doctor.
+                    </p>
+                    <input class="btn btn-default next" type="button" onClick="" value="Go to Next Question">
+                </div>
+
+
+                <div class="question_wrapper" id="question10">
+                    <p class="question">Do you feel like you know enough about clinical trials to make a decision?</p>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="yes" name="question10" value="2" id="radio-19">
+                        <label for="radio-19"><span class="radio">Yes</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="unsure" name="question10" value="1" id="radio-20">
+                        <label for="radio-20"><span class="radio">Unsure</span></label>
+                    </div>
+                    <div class="radio_wrapper">
+                        <input type="radio" data-selection="no" name="question10" value="0" id="radio-21" data-issue="feeling that you don’t know enough about clinical trials">
+                        <label for="radio-21"><span class="radio">No</span></label>
+                    </div>
+                    <input class="btn btn-default btn-next" id="next10" type="button" onClick="" value="Continue">
+                </div>
+
+                <div class="response_wrapper" id="response10Yes">
+                    <img class="question-icon" alt="Know" src="img/consent.png">
+                    <p>
+You said that you think you have all of the information you need to make a decision. <span class="highlight">That’s terrific!</span> Our goal is to help you make a decision that is based on the facts about research and your personal values. Whether you decide to join a clinical trial is always up to you.
+                    </p>
+                    <input class="btn btn-default next" type="button" value="Finish" onclick="calculate()">
+                </div>
+
+                <div class="response_wrapper" id="response10Unsure">
+                    <img class="question-icon" alt="Know" src="img/consent.png">
+                    <p>
+You said that you need to know more before making a decision about joining a clinical trial. Our goal is to help you make a decision that is based on the facts about research and your personal values. <span class="highlight">No one should join a clinical trial or research study until they feel like they know enough to feel comfortable</span>. You can learn more about what it means to join a study in your personalized report at the end of this quiz.
+                    </p>
+                    <input class="btn btn-default next" type="button" value="Finish" onclick="calculate()">
+                </div>
+
+                <div class="response_wrapper" id="response10No">
+                    <img class="question-icon" alt="Know" src="img/consent.png">
+                    <p>
+You said that you were unsure if you needed more information about clinical trials make a decision about participating. Our goal is to help you make a decision that is based on the facts about research and your personal values. <span class="highlight">No one should join a clinical trial or research study until they feel like they know enough to feel comfortable</span>. You can learn more about what it means to join a study in your personalized report at the end of this quiz.
+                    </p>
+                    <input class="btn btn-default next" type="button" value="Finish" onclick="calculate()">
+                </div>
+
+
+                <div class="response_wrapper" id="final">
+                    <!-- <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h3 class="progress-title">How likely are you to participate in a clinical trial?</h3>
+                            <div class="progress progress-background">
+                                <div id="progress-bar" class="progress-bar">
+                                    <div class="progress-valuex"><span id="scorex"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div id="lowscore" class="final">
+                        People who respond to questions the way you did are somewhat less likely to participate in a clinical trial. While issues like <span id="issueList" class="highlight"></span> often mean that a person might not be a good match for a clinical trial, you may still want to learn more about what it means to join a study. While joining a study isn’t for everyone, there may be benefits that might interest you.
+                    </div>
+
+                    <div id="highscore" class="final">
+                        People who respond to questions the way you did often participate in a research study or clinical trial.  <span class="highlight">Even though your answers show that you are more likely to join a study than others, you may still have important questions.</span> Please feel free to call a member of our staff at <b>(800) 555-4545</b> at any time.
+                    </div>
+
+                    <p id="treatment" class="final">
+                        If you are worried about receiving the best available treatment for your cancer, <a href="#" a href="#" data-toggle="modal" data-target="#random-modal">you may find this video helpful</a>.
+                    </p>
+
+                    <p id="trust" class="final">
+                        If you do not want to join a study because you do not trust doctors and hospitals, you may be interested to learn more about the many ways patients are protected when they participate in a research study, <a href="#" a href="#" data-toggle="modal" data-target="#protected-modal">you may find this video helpful</a>
+                    </p>
+
+                    <p id="insurance" class="final">
+                        Even if you do not have health insurance, you may still be able to join a research study or clinical trial. Please feel free to call a member of our staff at <b>(800) 555-4545</b> at any time to learn if there are any available trials available to you.
+                    </p>
+
+                    <p id="know" class="final">
+                        There are many ways to learn more about clinical trials. For example, you can look at our website: <a href="http://cancerresearch.miami" target="_blank">http://cancerresearch.miami</a>. You can also talk to a member of our staff who can answer all of your questions. Just call <b>(800) 555-4545</b>. You can also speak with your doctor, who may have ideas about studies that might be good for you.
+                    </p>
+                    <div id="family" class="final row">
+                    <p class="col-sm-12 col-md-6">
+                        It is true that being in a research study or clinical trial can involve extra time or effort, or that require sharing information about your medical condition. However, your family may be glad to know that you can be helpful to future cancer patients even if you just donate your time by answering questions about your diet or your lifestyle (or other topics), which can be done on the computer or at home. Both your privacy and your safety are protected in a number of important ways. You can learn about them by watching this video. </p>
+                        <!-- Protections/informed consent-->
+                        <div class="col-sm-12 col-md-6 vidcap">
+                            <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nIedUylRJ1s?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
+                            Play this video to learn how patients are protected in studies.</div>
+                   </div>
+
+<!--
+                    <p id="research" class="final">
+                        If you feel that participating in research is not a priority for you, you may be surprised to learn that not all studies involve medication. By donating your time or your medical information, you can help doctors and scientists find better ways to help future cancer patients.
+                    </p>
+-->
+
+                    <p class="final doctors">
+                        Medical research on tumors or cancer cells that would be removed from your body as part of your normal treatment. All of these studies are ways that cancer patients can make a very important contribution to scientific knowledge and to the care of future cancer patients. If you would like to learn more, please read through our website or call <b>(800) 555-4545</b> to talk to a special staff member who can explain all of these options.
+                    </p>
+
+                    <p class="doctors final">
+                        Doctors and scientists are looking for many different ways to improve the lives and health of cancer patients. While this includes new medical treatments, patients do not need to take new medicines to make a contribution to science. Here are some other kinds of studies that don’t involve taking medicine:
+                    </p>
+                    <div class="doctors final">
+                        <ul>
+                            <li>Surveys about your quality of life</li>
+                            <li>Studies on new ways to screen for cancer</li>
+                            <li>Surveys on how family members and loved ones cope with a patient’s cancer</li>
+                            <li>Studies on how to prevent cancer</li>
+                        </ul>
+                    </div>
+                    <div class="final choices row">
+                    <div  class="col-sm-12 col-md-6">
+                    <p>
+                        There is a lot more information available on our easy-to-use website at <a href="http://cancerresearch.miami/">cancerresearch.miami</a></p>
+                        <p> If you are ready to learn more about research studies that might be a good fit for you, this video describes what you can do next.</p>
+                        <!-- How to enroll -->
+                    </div>
+                        <div class="col-sm-12 col-md-6 vidcap"><div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WvPTBYdOCqk?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
+                        Play this video to learn more about research studies</div>
+                    </div>
+
+
+
+                    <p class="takeagain">
+                        <a href="#" class="logo btn btn-default" style="text-decoration: none;">Take the quiz again!</a>
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
+
+                <!--
+            </div>
+          </div>
+      </div>
+-->
+            </div>
+
+            <!-- Modal Randomisation -->
+            <div class="modal fade" id="random-modal" tabindex="-1" role="dialog" aria-labelledby="Randomisation Video">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe id="random-video" src="https://www.youtube.com/embed/RwhIPuqguHI?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal protections -->
+            <div class="modal fade" id="protected-modal" tabindex="-1" role="dialog" aria-labelledby="Patient Protections Video">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe id="protected-video" class="embed-responsive-item" src="https://www.youtube.com/embed/nIedUylRJ1s?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal enrollment -->
+            <div class="modal fade" id="enroll-modal" tabindex="-1" role="dialog" aria-labelledby="Patient Protections Video">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe id="enroll-video" class="embed-responsive-item" src="https://www.youtube.com/embed/WvPTBYdOCqk?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- /.container -->
+
+            <!-- jQuery Version 1.11.1 -->
+            <script src="js/jquery.js"></script>
+
+            <!-- Bootstrap Core JavaScript -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <script src="js/main.js"></script>
+
+            <script>
+                $(function() {
+                    $('#random-modal').modal({
+                        show: false
+                    }).on('hidden.bs.modal', function() {
+                        $('#random-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+                        console.log("hideme")
+                    });
+
+                    $('#protected-modal').modal({
+                        show: false
+                    }).on('hidden.bs.modal', function() {
+                        $('#protected-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+                        console.log("hideme")
+                    });
+
+                    $('#enroll-modal').modal({
+                        show: false
+                    }).on('hidden.bs.modal', function() {
+                        $('#enroll-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+                        console.log("hideme")
+                    });
+                });
+
+            </script>
+
+
+
+</body>
+
+</html>
