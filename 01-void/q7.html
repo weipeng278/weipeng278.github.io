@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <link rel="logo-allOfUs" href="Assets/allofus-research-program.png"> -->
+  <title>test1</title>
+
+  <!-- Bootstrap Import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Button Delay -->
+  <script type="text/javascript">
+    function showButton() {
+      document.getElementById("continue-btn").style.visibility = "visible";
+    }
+
+    function hideButton() {
+      document.getElementById("continue-btn").style.visibility = "hidden";
+    }
+
+    window.onload = function() {
+      hideButton();
+      setTimeout('showButton()', 10000);
+    }
+  </script>
+
+  <script type="text/javascript">
+    function preventBack() {
+      window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function() {
+      null
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Logo Bar -->
+  <nav class="navbar navbar-default fixed-top">
+    <a class="navbar-brand" href="#">
+      <img alt="Brand" src="Assets/logo.png" id="logo" class="logo">
+    </a>
+  </nav>
+
+  <!-- Content -->
+
+  <!-- Progress Bar -->
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 87.5%;" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100">7/8</div>
+  </div>
+
+  <!-- Checkbox -->
+  <form>
+
+    <p class="question-label flip-question">Q7: If you were to join the <i>All of Us</i> Research Program of Precision Medicine, what would be your concerns? <b>(CLICK TO SHOW)</b></p>
+
+    <div class="checkbox-group">
+
+      <div class="popup-group">
+
+        <button for="answer-A" id="answer-A" name="Q7-answer" value="7-A" type="button" class="Q7 checkbox-input popup-answer" data-toggle="modal" data-target="#popupA">
+          A. I am not sure if I would be eligible to join.
+        </button>
+        <br>
+        <button for="answer-B" id="answer-B" name="Q7-answer" value="7-B" type="button" class="Q7 checkbox-input popup-answer" data-toggle="modal" data-target="#popupB">
+          B. I might be too busy to participate.
+        </button>
+        <br>
+        <button for="answer-C" id="answer-C" name="Q7-answer" value="7-C" type="button" class="Q7 checkbox-input popup-answer" data-toggle="modal" data-target="#popupC">
+          C. I wouldn’t join a study unless I get paid.
+        </button>
+        <br>
+        <button for="answer-D" id="answer-D" name="Q7-answer" value="7-D" type="button" class="Q7 checkbox-input popup-answer" data-toggle="modal" data-target="#popupD">
+          D. I am not sure if the study would help find new treatments for my disease or condition.
+        </button>
+        <br>
+        <button for="answer-E" id="answer-E" name="Q7-answer" value="7-E" type="button" class="Q7 checkbox-input popup-answer" data-toggle="modal" data-target="#popupE">
+          E. I don’t trust doctors and researchers much.
+        </button>
+        <br>
+        <button for="answer-F" id="answer-F" name="Q7-answer" value="7-F" type="button" class="Q7 checkbox-input popup-answer" data-toggle="modal" data-target="#popupF">
+          F. I am concerned about privacy and data security.
+        </button>
+
+      </div>
+
+      <div class="modal fade" id="popupA" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              Enrollment is open to all eligible adults (except individuals younger than 18, unable to consent on their own, or in prison) who live in the United States. People of every race, ethnicity, sex, gender, and sexual orientation are
+              welcome. Whether you are really healthy or have significant health concerns, your participation is valuable.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupB" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              If you decide to join the <i>All of Us</i> Research Program, you will be asked to share different kinds of information. If you have a computer or tablet, much of the information can be submitted online. You can also visit a nearby local clinic
+              or drug store where we will collect basic physical measurements, including your height, weight, and hip and waist measurements, as well as your blood pressure and heart rate in one visit. We will also collect small samples of blood and
+              urine, similar to those you would provide at a normal doctor’s visit. We expect that it will take 20 to 30 minutes, which includes 15 to 20 minutes for the physical measurements and 5 to 10 minutes for collecting biological samples. If
+              you join, you can withdraw (quit) at any time for any reason without penalty.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupC" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              If we ask you to provide physical measurements and give biological samples, we will offer you one-time compensation of $25. It may be in the form of cash, gift card, or electronic voucher.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupD" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              Researchers will use the data collected from the <i>All of Us</i> Research Program to study many different diseases and conditions. While the results from health research may not target your conditions right away or bring immediate benefits,
+              one day they will help improve your health.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupE" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              Before researchers can access data collected from the Precision Medicine Initiative, there are steps they must follow. First, researchers have to be screened and approved by a special committee. They must follow strict data security
+              rules. Also, they have to sign an agreement saying they will not try to find out who you are. We will not give researchers your name.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupF" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              Your privacy is very important, and we will take great care to protect it if you join. First, the information we collect will be stored on protected computers. We will limit and keep track of who sees the information. Second, we will
+              remove your name and other direct identifiers (like your Social Security number) from your information and replace them with a code. Third, to work with your health information, researchers must promise not to try to find out who you
+              are. The <i>All of Us</i> Research Program has Certificates of Confidentiality from the U.S. government. This will help us fight legal demands (such as a court order) to give out information that could identify you.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Continue Button -->
+    <div>
+      <input id="continue-btn" type="button submit" class="btn btn-lg submit-btn flip-continue" value="continue" onClick="javascript:
+                window.open('q8.html', '_self');">
+    </div>
+
+  </form>
+
+  <!-- <pre id="log">
+</pre> -->
+
+
+
+  <!-- Script -->
+  <script src="js/log.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

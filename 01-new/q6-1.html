@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <link rel="logo-allOfUs" href="Assets/allofus-research-program.png"> -->
+  <title>joinallofus</title>
+
+  <!-- Bootstrap Import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <script type="text/javascript">
+    function preventBack() {
+      window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function() {
+      null
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Logo Bar -->
+  <nav class="navbar navbar-default fixed-top">
+    <a class="navbar-brand" href="#">
+      <img alt="Brand" src="Assets/logo.png" id="logo" class="logo">
+    </a>
+  </nav>
+
+  <!-- Content -->
+
+  <!-- Progress Bar -->
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">6/8</div>
+  </div>
+
+  <!-- Checkbox -->
+  <form>
+
+    <p class="question-label">Do you have children?</p>
+
+    <div class="checkbox-group">
+
+      <input type="radio" id="answer-A" name="Q6-answer" value="q6A-2" class="Q6 checkbox-input" style="margin-left: 15%;">
+      <label class="answer-label" for="answer-A">Yes</label>
+      <br>
+      <input type="radio" id="answer-B" name="Q6-answer" value="q6B-2" class="Q6 checkbox-input" style="margin-left: 15%;">
+      <label class="answer-label" for="answer-B">No</label>
+
+
+    </div>
+
+    <!-- Continue Button -->
+    <div>
+      <input id="confirm-btn" type="button submit" class="btn btn-lg submit-btn" value="confirm" onClick="javascript:
+    var rates = document.getElementsByClassName('Q6');
+    var radio_value;
+    for(var i = 0; i < rates.length; i++){
+        if(rates[i].checked){
+            radio_value = rates[i].value;
+                console.log(radio_value);
+                window.open(radio_value + '.html', '_self');
+        }
+    };">
+    </div>
+
+  </form>
+
+  <!-- <pre id="log">
+</pre> -->
+
+
+
+  <!-- Script -->
+  <script src="js/log.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147428764-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147428764-1');
+</script>
+
+</html>

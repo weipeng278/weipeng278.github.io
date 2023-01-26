@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <link rel="logo-allOfUs" href="Assets/allofus-research-program.png"> -->
+  <title>test1</title>
+
+  <!-- Bootstrap Import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Button Delay -->
+  <!-- <script type="text/javascript">
+
+          function showButton()
+          {
+              document.getElementById("last-btn").style.visibility = "visible";
+              document.getElementById("home-btn").style.visibility = "visible";
+          }
+
+          function hideButton()
+          {
+              document.getElementById("last-btn").style.visibility = "hidden";
+              document.getElementById("home-btn").style.visibility = "hidden";
+          }
+
+          window.onload = function()
+          {
+              hideButton();
+              setTimeout('showButton()', 2000);
+          }
+
+      </script> -->
+
+  <script type="text/javascript">
+    function preventBack() {
+      window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function() {
+      null
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <span class="loader"></span>
+
+  <!-- Logo Bar -->
+  <nav class="navbar navbar-default fixed-top">
+    <a class="navbar-brand" href="#">
+      <img alt="Brand" src="Assets/logo.png" id="logo" class="logo">
+    </a>
+  </nav>
+
+  <!-- Progress Bar -->
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">8/8</div>
+  </div>
+
+
+  <main>
+
+
+    <!-- Content -->
+    <div class="text">
+      <p>We understand you need time to consider participation. If you would like to view more topics on this informational website, click START OVER.
+      </p>
+
+    </div>
+
+    <!-- Visit Button -->
+    <div>
+
+      <input id="home-btn" type="button submit" class="btn btn-lg submit-btn" value="START OVER" onClick="javascript:
+                  window.open('https://kikijinqili.github.io/AOU-web/01/index.html');">
+    </div>
+
+    <!-- Content -->
+    <div class="text last-text">
+      <p>You can also visit the Precision Medicine Initiative website to know more about Precision Medicine. You can click the button below.
+      </p>
+
+    </div>
+
+    <!-- Visit Button -->
+    <div>
+      <input id="last-btn" type="button submit" class="btn btn-lg submit-btn" value="Visit “ALL OF US” WEBSITE" onClick="javascript:
+                  window.open('https://www.joinallofus.org');">
+    </div>
+
+
+  </main>
+
+  <!-- Script -->
+  <script src="js/log.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

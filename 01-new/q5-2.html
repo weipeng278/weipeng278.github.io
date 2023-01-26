@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <link rel="logo-allOfUs" href="Assets/allofus-research-program.png"> -->
+  <title>joinallofus</title>
+
+  <!-- Bootstrap Import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+
+<body>
+
+  <!-- Logo Bar -->
+  <nav class="navbar navbar-default fixed-top">
+    <a class="navbar-brand" href="#">
+      <img alt="Brand" src="Assets/logo.png" id="logo" class="logo">
+    </a>
+  </nav>
+
+  <!-- Content -->
+
+  <!-- Progress Bar -->
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 62.5%;" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">5/8</div>
+  </div>
+
+  <!-- Checkbox -->
+  <form>
+
+    <p class="question-label flip-question">What is your primary concern? <b>(CLICK TO SHOW)</b></p>
+
+    <div class="checkbox-group">
+
+      <div class="popup-group">
+
+        <button for="answer-A" id="answer-A" name="Q5-answer" value="5-B" type="button" class="Q5-2 checkbox-input popup-answer" data-toggle="modal" data-target="#popupA">
+          A. My medication does not work or has uncomfortable side effects.
+        </button>
+        <br>
+        <button for="answer-B" id="answer-B" name="Q5-answer" value="5-C" type="button" class="Q5-2 checkbox-input popup-answer" data-toggle="modal" data-target="#popupB">
+          B. My doctor is not sure what causes my condition.
+        </button>
+        <br>
+        <button for="answer-C" id="answer-C" name="Q5-answer" value="5-D" type="button" class="Q5-2 checkbox-input popup-answer" data-toggle="modal" data-target="#popupC">
+          C. My health care is not the best because of my demographic background (e.g., race or ethnicity).
+        </button>
+        <br>
+        <button for="answer-D" id="answer-D" name="Q5-answer" value="5-E" type="button" class="Q5-2 checkbox-input popup-answer" data-toggle="modal" data-target="#popupD">
+          D. Health care technology is not advanced enough.
+        </button>
+        <br>
+        <button for="answer-E" id="answer-E" name="Q5-answer" value="5-F" type="button" class="Q5-2 checkbox-input popup-answer" data-toggle="modal" data-target="#popupE">
+          E. Other.
+        </button>
+
+      </div>
+
+      <div class="modal fade" id="popupA" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              We are sorry to hear that you are not satisfied with the health care you are receiving. You are not alone. So far, most medical treatments have been designed for the “average patient” based on the entire population without considering
+              individual differences. Under the current model of health care, it is very common to receive medications that do not work. Because every body is different, most people experience side effects when they take medication. The All of Us
+              Research Program of Precision Medicine collects and uses diverse sources of data to understand how genetics, environment, lifestyle, and other factors affect disease progression and treatment response for each person. You can join the
+              program to help researchers find better treatments in the future.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn modal-btn close-size" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupB" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              We are sorry to hear that you are not satisfied with the health care you are receiving. You are not alone. The biological mechanisms of many diseases are not fully understood. We don’t know whether a disease is caused by genetics,
+              lifestyle or anything else. We are not sure why many diseases strike any particular person. The All of Us Research Program of Precision Medicine collects and uses diverse sources of data to understand how genetics, environment,
+              lifestyle, and other factors affect disease risk and progression for each person. You can join the program to help researchers learn more about how to prevent and treat different health conditions.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn modal-btn close-size" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupC" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              We understand your concern. Current medical treatments have been developed mostly based on data from participants of European ancestry and those who have higher education and income. That means scientists cannot evaluate whether or not
+              a particular treatment for a disease is more effective for people from other backgrounds. The All of Us Research Program of Precision Medicine collects and uses diverse sources of data from a million participants from all walks of life
+              to understand disease risk and progression in all populations. You can join the program to help researchers make health care better and more equal for all of us.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn modal-btn close-size" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupD" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              We understand your concern. The current health care system has many problems. We don’t know whether a disease is caused by genetics, lifestyle or anything else. So medical treatments mostly target the symptoms instead of the causes of
+              diseases. Also, treatments are designed for an average patient without considering individual differences. The All of Us Research Program of Precision Medicine will allow researchers to create better tools to identify, prevent, and
+              treat disease. You can join the program to help researchers find better ways to prevent and treat different health conditions in the future.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn modal-btn close-size" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="popupE" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              The current health care system has many problems. The goal of All of Us Research Program of Precision Medicine is to understand why people get sick or stay healthy. The All of Us Research Program will be here for the long-term. As the
+              program grows, more features will be added and more answers will be found. You can join the program to help researchers find better ways to prevent and treat different health conditions in the future.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn modal-btn close-size" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Continue Button -->
+    <div>
+      <input id="continue-btn" type="button submit" class="btn btn-lg submit-btn flip-continue" value="continue" onClick="javascript:
+                window.open('q6-1.html', '_self');">
+    </div>
+
+  </form>
+
+  <!-- <pre id="log">
+</pre> -->
+
+
+
+  <!-- Script -->
+  <script src="js/log.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147428764-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147428764-1');
+</script>
+
+</html>

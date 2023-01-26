@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <link rel="logo-allOfUs" href="Assets/allofus-research-program.png"> -->
+  <title>joinallofus</title>
+
+  <!-- Bootstrap Import -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Button Delay -->
+
+  <script type="text/javascript">
+    function preventBack() {
+      window.history.forward();
+    }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () {
+      null
+    };
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Logo Bar -->
+  <nav class="navbar navbar-default fixed-top">
+    <a class="navbar-brand" href="#">
+      <img alt="Brand" src="Assets/logo.png" id="logo" class="logo">
+    </a>
+  </nav>
+
+  <!-- Content -->
+
+  <!-- Progress Bar -->
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0"
+      aria-valuemax="100">4/8</div>
+  </div>
+
+  <!-- Checkbox -->
+  <form>
+
+    <p class="question-label">Do you have a family history of particular chronic diseases?</p>
+
+    <div class="checkbox-group">
+
+      <input type="radio" id="answer-A" name="Q4-answer" value="4-B" class="Q4A-3 checkbox-input">
+      <label class="answer-label" for="answer-A">Yes</label>
+      <br>
+      <input type="radio" id="answer-B" name="Q4-answer" value="4-C" class="Q4A-3 checkbox-input">
+      <label class="answer-label" for="answer-B">No</label>
+      <br>
+      <input type="radio" id="answer-C" name="Q4-answer" value="4-A" class="Q4A-3 checkbox-input">
+      <label class="answer-label" for="answer-C">Not sure.</label>
+
+
+    </div>
+
+    <!-- Modal -->
+
+    <div>
+      <input value="confirm" id="confirm-btn" type="button submit" class="runButton btn btn-lg submit-btn"
+        onClick="javascript: clickQ4A3();">
+    </div>
+
+    <div class="modal fade" id="4-B" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body modal-text">
+            We understand you have a particular chronic condition to worry about. Many chronic diseases, such as diabetes, Alzheimer’s disease, result in lower life quality and are expensive to treat. It is possible that your condition may be passed down from your parents. But even doctors are not always sure about this. <i>All of Us</i> Research Program of Precision Medicine can help scientists find out the exact causes and risk factors for chronic diseases affecting different individuals. Results from this program may lead to better ways to prevent and treat your conditions so that you can live a healthier life in the future.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary close-btn modal-btn" data-dismiss="modal" onClick="javascript:
+            window.open('q5-1.html', '_self');">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="4-C" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body modal-text">
+            We understand you have a particular chronic condition to worry about. Many chronic diseases, such as
+            diabetes, Alzheimer’s disease, lower life quality and are expensive to treat. It is possible that your
+            condition may be linked to your
+            lifestyle or environmental factors. But even doctors are not always sure about this. <i>All of Us</i>
+            Research Program of Precision Medicine can help scientists find out the exact causes and risk factors for
+            chronic diseases affecting
+            different individuals. Results from this program may lead to better ways to prevent and treat your
+            conditions so that you can live a healthier life in the future.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary close-btn modal-btn" data-dismiss="modal" onClick="javascript:
+            window.open('q5-1.html', '_self');">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="4-A" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body modal-text">
+            We’re glad to hear that. Even though you’re generally healthy, <i>All of Us</i> Research Program of Precision Medicine still needs your participation. By joining the program, you will be contributing to research that improves health for all of us. The research outcomes may benefit you in the future as well.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary close-btn modal-btn" data-dismiss="modal" onClick="javascript:
+            window.open('q5-1.html', '_self');">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+  <!-- <pre id="log">
+</pre> -->
+
+
+
+  <!-- Script -->
+  <script src="js/log.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147428764-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147428764-1');
+</script>
+
+</html>
